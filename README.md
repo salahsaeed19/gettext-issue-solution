@@ -1,4 +1,12 @@
-**Documenting the Solution for ImportError Issue in modeltranslation Library Due to Missing Gettext Files**
+### **Documenting the Solution for ImportError Issue in modeltranslation Library Due to Missing Gettext Files**
+
+#### **Types of Issues**
+The following issues have been documented in this file:
+
+1. **ImportError: cannot import name 'checksum' from 'modeltranslation.models'**
+2. **AttributeError: 'str' object has no attribute 'mro'**
+
+---
 
 ### The Problem:
 While running a Django project that uses the `modeltranslation` library, the following error occurred:
