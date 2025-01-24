@@ -14,6 +14,12 @@ While running a Django project that uses the `modeltranslation` library, the fol
 ```python
 ImportError: cannot import name 'checksum' from 'modeltranslation.models'
 ```
+```python
+lazy
+    for type_ in resultclass.mro():
+                 ^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'mro'
+```
 
 ### The Cause:
 The issue was caused by the absence of the **gettext** library, which is required by the project or dependencies like `modeltranslation` to handle translations.
